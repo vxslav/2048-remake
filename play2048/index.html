@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h1>2048</h1>
+            <div>
+                <p>
+                    Join the tiles, get to <strong>2048</strong>!
+                </p>
+                <a href="#howTo"> How to play →</a>  
+            </div>
+        </div>
+        <div class="right">
+            <div class="scores">
+                <div id="score" class="score-board">
+                    <h6>SCORE</h6>
+                    <input type="hidden" name="current-score" id="currentScore" >
+                    <div id="displayCurrentScore">  </div>
+                </div>
+                <div id="best" class="score-board">
+                    <h6>BEST</h6>
+                    <input type="hidden" name="best-score" id="bestScore">
+                    <div id="displayBestScore"> </div>
+                </div>
+            </div>
+            <button id="new">New Game</button>
+        </div>
+    </header>
+    <main>
+        
+        <div id="game">
+
+        </div>
+
+    </main>
+    <footer>
+        <p id="howTo"> 
+            <strong>HOW TO PLAY:</strong> Use your <strong>arrow keys</strong> to move the tiles. Tiles with the same number <strong>merge into one</strong> when they touch. Add them up to reach <strong>2048</strong>!
+        </p>
+    </footer>
+    <script src="assets/app.js"></script>
+</body>
+</html>
